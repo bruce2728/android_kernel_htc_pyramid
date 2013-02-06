@@ -46,7 +46,7 @@
 #define L_VAL_SCPLL_CAL_MAX	0x24 /* = 1994 MHz with 27MHz source */
 
 #define MAX_VDD_SC		1450000 /* uV */
-#define MIN_VDD_SC		 700000 /* uV */
+#define MIN_VDD_SC		 800000 /* uV */
 #define MAX_VDD_MEM		1450000 /* uV */
 #define MAX_VDD_DIG		1300000 /* uV */
 #define MAX_AXI			 310500 /* KHz */
@@ -204,7 +204,7 @@ static struct clkctl_l2_speed l2_freq_tbl_v2[] = {
 
 /* SCPLL frequencies = 2 * 27 MHz * L_VAL */
 static struct clkctl_acpu_speed acpu_freq_tbl_oc[] = {
-  { {1, 1},  192000,  ACPU_PLL_8, 3, 1, 0, 0,    L2(1),   775000, 0x03006000},
+  { {1, 1},  192000,  ACPU_PLL_8, 3, 1, 0, 0,    L2(1),   800000, 0x03006000},
   /* MAX_AXI row is used to source CPU cores and L2 from the AFAB clock. */
   { {0, 0},  MAX_AXI, ACPU_AFAB,  1, 0, 0, 0,    L2(0),   800000, 0x03006000},
   { {1, 1},  384000,  ACPU_PLL_8, 3, 0, 0, 0,    L2(1),   800000, 0x03006000},
