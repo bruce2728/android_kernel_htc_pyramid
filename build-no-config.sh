@@ -12,7 +12,7 @@ MAKE="2"
 ## Set compiler location
 echo Setting compiler location...
 export ARCH=arm
-export CROSS_COMPILE=$HOME/android/system/prebuilt/linux-x86/toolchain/linaro/bin/arm-eabi-
+export CROSS_COMPILE=$HOME/android/system/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-
 
 ## Build Sultan kernel
 make -j$MAKE ARCH=arm
