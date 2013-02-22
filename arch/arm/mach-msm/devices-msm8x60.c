@@ -936,9 +936,19 @@ static struct resource kgsl_3d0_resources[] = {
 static struct kgsl_device_platform_data kgsl_3d0_pdata = {
 	.pwrlevel = {
 		{
-			.gpu_freq = 266667000,
+			.gpu_freq = 320000000,
 			.bus_freq = 4,
 			.io_fraction = 0,
+		},
+		{
+			.gpu_freq = 300000000,
+			.bus_freq = 4,
+			.io_fraction = 0,
+		},
+		{
+			.gpu_freq = 266667000,
+			.bus_freq = 4,
+			.io_fraction = 25,
 		},
 		{
 			.gpu_freq = 228571000,
@@ -950,17 +960,8 @@ static struct kgsl_device_platform_data kgsl_3d0_pdata = {
 			.bus_freq = 2,
 			.io_fraction = 100,
 		},
-		{
-			.gpu_freq = 177778000,
-			.bus_freq = 1,
-			.io_fraction = 100,
-		},
-		{
-			.gpu_freq = 27000000,
-			.bus_freq = 0,
-		},
 	},
-	.init_level = 0,
+	.init_level = 4,
 	.num_levels = 5,
 	.set_grp_async = NULL,
 	.idle_timeout = HZ/5,
@@ -999,20 +1000,28 @@ static struct resource kgsl_2d0_resources[] = {
 static struct kgsl_device_platform_data kgsl_2d0_pdata = {
 	.pwrlevel = {
 		{
+			.gpu_freq = 266667000,
+			.bus_freq = 2,
+		},
+		{
+			.gpu_freq = 228571000,
+			.bus_freq = 2,
+		},
+		{
 			.gpu_freq = 200000000,
 			.bus_freq = 2,
 		},
 		{
-			.gpu_freq = 96000000,
-			.bus_freq = 1,
+			.gpu_freq = 160000000,
+			.bus_freq = 2,
 		},
 		{
-			.gpu_freq = 27000000,
-			.bus_freq = 0,
+			.gpu_freq = 145455000,
+			.bus_freq = 1,
 		},
 	},
-	.init_level = 0,
-	.num_levels = 3,
+	.init_level = 4,
+	.num_levels = 5,
 	.set_grp_async = NULL,
 	.idle_timeout = HZ/5,
 	.nap_allowed = false,
@@ -1050,20 +1059,28 @@ static struct resource kgsl_2d1_resources[] = {
 static struct kgsl_device_platform_data kgsl_2d1_pdata = {
 	.pwrlevel = {
 		{
+			.gpu_freq = 266667000,
+			.bus_freq = 2,
+		},
+		{
+			.gpu_freq = 228571000,
+			.bus_freq = 2,
+		},
+		{
 			.gpu_freq = 200000000,
 			.bus_freq = 2,
 		},
 		{
-			.gpu_freq = 96000000,
-			.bus_freq = 1,
+			.gpu_freq = 160000000,
+			.bus_freq = 2,
 		},
 		{
-			.gpu_freq = 27000000,
-			.bus_freq = 0,
+			.gpu_freq = 145455000,
+			.bus_freq = 1,
 		},
 	},
-	.init_level = 0,
-	.num_levels = 3,
+	.init_level = 4,
+	.num_levels = 5,
 	.set_grp_async = NULL,
 	.idle_timeout = HZ/5,
 	.nap_allowed = false,
