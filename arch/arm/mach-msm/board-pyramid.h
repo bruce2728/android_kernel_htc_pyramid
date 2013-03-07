@@ -146,9 +146,11 @@
 #define PYRAMID_GPIO_BT_RESET_N        (142)
 
 /* USB */
+#define PYRAMID_GPIO_MHL_WAKE_UP        (62)
 #define PYRAMID_GPIO_USB_ID        (63)
 #define PYRAMID_GPIO_MHL_RESET        (70)
 #define PYRAMID_GPIO_MHL_INT        (71)
+#define PYRAMID_GPIO_MHL_USB_EN         (139)
 #define PYRAMID_GPIO_MHL_USB_SWITCH        (99)
 
 /* Camera */
