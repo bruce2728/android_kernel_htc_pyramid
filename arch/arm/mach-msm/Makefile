@@ -351,7 +351,7 @@ obj-$(CONFIG_HTC_BATT_8960) += htc_battery_8960.o htc_battery_cell.o
 obj-$(CONFIG_MACH_PYRAMID) += htc_bdaddress.o board-pyramid-rfkill.o
 obj-$(CONFIG_MACH_PYRAMID) += board-pyramid-mmc.o board-pyramid-wifi.o
 ifeq ($(CONFIG_ION_MSM),y)
-#obj-$(CONFIG_MACH_PYRAMID) += board-pyramid-ion.o
+obj-$(CONFIG_MACH_PYRAMID) += board-pyramid-ion.o
 endif
 obj-$(CONFIG_FORCE_FAST_CHARGE) += fastchg.o
 obj-$(CONFIG_MACH_SHOOTER) += board-shooter.o
